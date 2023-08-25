@@ -24,7 +24,9 @@ const TodoCard = ({ todo }) => {
         onChange={() => handleCheck(todo.id)}
       />
       <Link href={`/editTodo/${todo.id}`} className={styles.todoLink}>
-        <p>{todo.title}</p>
+        <p>
+          <strong>{todo.title}</strong>
+        </p>
         <p>{todo.description}</p>
       </Link>
     </div>
