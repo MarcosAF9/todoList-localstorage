@@ -63,13 +63,37 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.saveBtn {
+.buttonsRow {
+  display: flex;
+  gap: 22px;
+}
+
+.buttons {
   width: 100%;
   height: 60px;
   padding: 16px 0;
-  background-color: #3da9fc;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.buttons:hover {
+  box-shadow: 2px 2px black;
+  border: 0 2px 2px 0 solid black;
+}
+
+.saveBtn {
+  background-color: #3da9fc;
+}
+.saveBtn:hover {
+  background-color: #328ed4;
+}
+
+.deleteBtn {
+  background-color: #ef4565;
+}
+.deleteBtn:hover {
+  background-color: #bf344d;
 }

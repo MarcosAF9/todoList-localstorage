@@ -82,14 +82,16 @@ const EditTodo = ({ params }) => {
             onChange={(e) => setDescription(e.target.value)}
           />
         </div>
-        <div style={{ display: "flex", gap: "22px" }}>
-          <button className={styles.saveBtn} type="submit">
+        <div className={styles.buttonsRow}>
+          <button
+            className={`${styles.buttons} ${styles.saveBtn}`}
+            type="submit"
+          >
             Salvar
           </button>
           <button
             type="button"
-            className={styles.saveBtn}
-            style={{ backgroundColor: "#EF4565" }}
+            className={`${styles.buttons} ${styles.deleteBtn}`}
             onClick={() => deletedTodo(params.id)}
           >
             Deletar

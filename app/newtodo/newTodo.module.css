@@ -72,4 +72,11 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.saveBtn:hover {
+  background-color: #328ed4;
+  box-shadow: 2px 2px black;
+  border: 0 2px 2px 0 solid black;
 }

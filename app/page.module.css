@@ -50,6 +50,10 @@
   bottom: 20px;
   right: 20px;
   color: #3da9fc;
+  transition: 0.5s;
+}
+.addIcon:hover {
+  color: #2981c4;
 }
 
 .todo {
