@@ -55,7 +55,7 @@ const EditTodo = ({ params }) => {
         <Link href={"/"}>
           <AiOutlineLeft className={styles.backIcon} />
         </Link>
-        <h1>Logo</h1>
+        <h1>Lista de Tarefas</h1>
       </div>
 
       <form className={styles.createTodo} onSubmit={handleEdit}>

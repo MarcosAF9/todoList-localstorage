@@ -1,6 +1,6 @@
 .container {
   width: 420px;
-  height: 600px;
+  height: 720px;
   border: 1px solid blue;
   margin: 0 auto;
   display: flex;
@@ -15,6 +15,9 @@
   width: 100%;
   padding: 22px 12px;
   height: 154px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .todoList {
@@ -33,4 +36,11 @@
   bottom: 20px;
   right: 20px;
   color: #3da9fc;
+}
+
+.todo {
+  border-bottom: 2px solid #90b4ce;
+  padding: 18px 0;
+  font-size: 22px;
+  font-weight: 600;
 }

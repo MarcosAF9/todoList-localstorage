@@ -13,13 +13,18 @@ const TodoList = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h1>Logo</h1>
+        <h1>Lista de Tarefas</h1>
         <Searchbar />
       </div>
 
       <div className={styles.todoList}>
-        {todoList &&
-          todoList.map((todo, index) => <TodoCard key={index} todo={todo} />)}
+        {todoList.length > 0 ? (
+          todoList.map((todo, index) => <TodoCard key={index} todo={todo} />)
+        ) : (
+          <div className={styles.todo}>
+            <p>Nenhuma tarefa encontrada!</p>
+          </div>
+        )}
       </div>
       <Link href={"/newtodo"}>
         <BsFillPlusCircleFill className={styles.addIcon} />
