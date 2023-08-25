@@ -57,6 +57,7 @@ const NewTodo = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             className={styles.titleInput}
+            required
           />
         </div>
         <div className={styles.description}>
@@ -69,6 +70,7 @@ const NewTodo = () => {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             className={styles.descriptionInput}
+            required
           />
         </div>
         <button className={styles.saveBtn}>Salvar</button>
