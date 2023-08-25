@@ -30,6 +30,20 @@
   overflow-y: scroll;
 }
 
+.customScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background-color: #3da9fc;
+  border-radius: 12px;
+  border: 1px solid blue;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 .addIcon {
   font-size: 64px;
   position: absolute;

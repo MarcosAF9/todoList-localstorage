@@ -17,7 +17,7 @@ const TodoList = () => {
         <Searchbar />
       </div>
 
-      <div className={styles.todoList}>
+      <div className={`${styles.todoList} ${styles.customScroll}`}>
         {todoList.length > 0 ? (
           todoList.map((todo, index) => <TodoCard key={index} todo={todo} />)
         ) : (
