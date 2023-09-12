@@ -13,6 +13,7 @@
 
 .formInput::placeholder {
   color: #fff;
+  font-weight: 600;
 }
 
 .formBtn {
@@ -21,4 +22,5 @@
   background-color: #fff;
   border-radius: 0 50px 50px 0;
   padding: 0 12px;
+  font-weight: 600;
 }
